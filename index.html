@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silver Lion Space | Terminal v1.0.4</title>
+    <style>
+        :root {
+            --bg-color: #050505;
+            --terminal-green: #39ff14;
+            --terminal-green-dim: #1ea60b;
+            --terminal-glow: rgba(57, 255, 20, 0.15);
+        }
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: var(--bg-color);
+            color: var(--terminal-green);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            text-shadow: 0 0 4px var(--terminal-glow);
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            flex: 1;
+            box-sizing: border-box;
+        }
+        header {
+            border-bottom: 2px dashed var(--terminal-green);
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+        h1 {
+            font-size: 2.2rem;
+            margin: 0 0 10px 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .prompt {
+            color: #ffffff;
+            font-weight: bold;
+        }
+        .content-section {
+            border: 1px solid var(--terminal-green-dim);
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: inset 0 0 10px rgba(57, 255, 20, 0.05);
+        }
+        h2 {
+            font-size: 1.4rem;
+            margin-top: 0;
+            text-transform: uppercase;
+            background-color: var(--terminal-green-dim);
+            color: var(--bg-color);
+            padding: 3px 10px;
+            display: inline-block;
+        }
+        h3 {
+            font-size: 1.1rem;
+            margin-top: 20px;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+        p, li {
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+        a {
+            color: #ffffff;
+            text-decoration: underline;
+            transition: color 0.2s;
+        }
+        a:hover {
+            color: var(--terminal-green);
+            background-color: var(--terminal-green-dim);
+            text-decoration: none;
+        }
+        footer {
+            background-color: #000000;
+            padding: 30px 20px;
+            font-size: 0.8rem;
+            border-top: 2px dashed var(--terminal-green-dim);
+            color: var(--terminal-green-dim);
+        }
+        footer p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1><span class="prompt">kristina@silverlion:~$</span> run studio_init</h1>
+            <p>Status: ONLINE | System: Secure Android Deployment Node</p>
+        </header>
+
+        <div class="content-section">
+            <h2>[SYSTEM INFO]</h2>
+            <p>Welcome to Silver Lion Space. We operate as an independent mobile software development studio. Our core objective is engineering high-performance software, interactive applications, and digital utilities tailored for the Android platform.</p>
+        </div>
+
+        <div id="privacy" class="content-section">
+            <h2>[PRIVACY POLICY]</h2>
+            <p><strong>Last updated: May 23, 2026</strong></p>
+            <p>At Silver Lion Space, we highly value user privacy. This document outlines data protocols across our mobile applications.</p>
+            
+            <h3>1. Data Collection</h3>
+            <p>Our applications are engineered to function without collecting, harvesting, or transmitting personal identifiers. All core application permissions requested (such as local storage or network access) are utilized strictly for device-side processing or direct user-initiated requests. We do not maintain remote databases containing user personal data.</p>
+            
+            <h3>2. Sub-processors & Analytics</h3>
+            <p>Certain applications may implement verified software development kits (SDKs) provided by Google Play Services. These systems automatically analyze anonymous technical metrics (such as crash logs, OS version, and hardware architecture) to ensure software stability. No tracking profiles are managed by this studio.</p>
+            
+            <h3>3. Contact Node</h3>
+            <p>For administrative inquiries or compliance data, contact the secure terminal: <a href="mailto:support@silverlion.space">support@silverlion.space</a>.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Silver Lion Space. All logs reserved.</p>
+        <p>Entity: Individual Entrepreneur Kristina Leongardt</p>
+        <p>Locality: Zhiuli Shartava ave., N 32, Apt 87, Batumi, 6000, Georgia</p>
+        <p>Secure Mail: support@silverlion.space</p>
+    </footer>
+
+</body>
+</html>
